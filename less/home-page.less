@@ -13,8 +13,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -63,6 +61,35 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+  }
+  @media @mobile {
+    padding: 0 4% 0 4%;
+    .content-section{
+      flex-direction: column;
+      .text-content{
+        width: 100%;
+      }
+
+      .img-content{
+        width: 100%;
+        order: 2;
+      }
+      .text-content{
+        order: 1;
+      }
+    }
+
+    .content-destination{
+      width:100%;
+    }
+
+    .content-pick{
+      flex-direction: column;
+      .destination{
+        width: 100%;
+        padding: 0 5% 0 5%;
+      }
     }
   }
 }// home
